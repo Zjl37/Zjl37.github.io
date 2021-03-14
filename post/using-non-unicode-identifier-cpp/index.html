@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>在 C++ 中使用中文标识符 | Zjl37 的小屋</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zjl37.github.io/favicon.ico?v=1615711045891">
+<link rel="stylesheet" href="https://zjl37.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+注意：本文撰写于文章发布很久以前。仅用来测试显示效果，不一定代表我目前的观点或以后的行文风格。
+
+偶尔看到一份 python 代码里使用了中文变量名，便想，C++ 是否支持 Unicode 标识符呢？
+
+注意本文关注的是 Unicode ..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zjl37.github.io">
+        <img src="https://zjl37.github.io/images/avatar.png?v=1615711045891" class="site-logo">
+        <h1 class="site-title">Zjl37 的小屋</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/Zjl37" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      
+    </div>
+    <div class="site-footer">
+      <p>若无特殊说明，所有文章内容采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a> 协议进行许可。</p><br/>
+<p>Proudly using <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></p> | <a class="rss" href="https://zjl37.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">在 C++ 中使用中文标识符</h2>
+            <div class="post-date">2021-02-10</div>
+            
+            <div class="post-content" v-pre>
+              <blockquote>
+<p><strong>注意：本文撰写于文章发布很久以前。仅用来测试显示效果，不一定代表我目前的观点或以后的行文风格。</strong></p>
+</blockquote>
+<p>偶尔看到一份 python 代码里使用了中文变量名，便想，C++ 是否支持 Unicode 标识符呢？</p>
+<blockquote>
+<p>注意本文关注的是 Unicode 标识符（用作变量名等的），而在字符串中放入 Unicode 字符已经是非常普遍的了。</p>
+</blockquote>
+<p>以一个 OIer 具备的能力和条件，可以用 Dev-C++ 写出一段如下代码（保存文件名为 <code>test67.cpp</code>）并尝试编译：</p>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+typedef int 整数;
+typedef double 双精度小数;
+
+整数 甲;
+双精度小数 乙;
+
+int main() {
+    cin&gt;&gt;甲&gt;&gt;乙;
+    cout&lt;&lt;甲&lt;&lt;&quot; &quot;&lt;&lt;乙&lt;&lt;endl;
+    return 0;
+}
+</code></pre>
+<p>结果可想而知。放弃。</p>
+<p>...But wait!</p>
+<h2 id="upgrade">UPGRADE!</h2>
+<p>Dev-C++ 是几年前的老古董了？！它所自带的编译器是 TDM-GCC 4.9.2. 现在想要使用 Unicode 标识符，看起来是个很新的概念，很容易想到需要最新的开发环境。</p>
+<p>在网上的资料指引下，我决定<a href="https://sourceforge.net/projects/mingw-w64/">到 sourceforge 下载<br>
+MinGW-w64 的 C++ 编译器</a>。我选择的版本是 <code>x86_64-win32-sjlj</code>. 经过了很多麻烦的步骤，终于搭建好了。</p>
+<p>那么接下来就：</p>
+<pre><code>g++ test67.cpp
+</code></pre>
+<p>结果又是一大堆 <code>error: stray '\...' in program</code>.</p>
+<p>这时源代码文件的字符编码应该还是 GBK，尝试转换为 UTF-8，未果。</p>
+<p>上网搜索资料。<strong>总结</strong>出以下内容：（因为查不到 C++ 标准，只能从各种问答帖中总结）</p>
+<blockquote>
+<p>“标识符只能由字母、数字和下划线组成并不能以下划线开头”已经是很早以前的事了。至少从 C++98 开始，标识符中还允许包含“Universal character name”，我们叫做“通用字符名”。</p>
+<hr>
+<p>“通用字符名”包含一些 Unicode 字符码位。从 C++11 开始，这些码位中包括了汉字所在码位。</p>
+</blockquote>
+<p>于是：</p>
+<pre><code>g++ test67.cpp -std=c++11
+</code></pre>
+<p>未果。又闻：</p>
+<blockquote>
+<p>Since GCC 5, the option <code>-fextended-identifiers</code> is enabled by default for C++, and for C99 and later C versions. This only supports UCNs in identifiers, not extended characters represented other than with UCNs.</p>
+</blockquote>
+<p>（来自 <a href="https://gcc.gnu.org/wiki/FAQ#What_is_the_status_of_adding_the_UTF-8_support_for_identifier_names_in_GCC.3F">GCC Wiki</a>）</p>
+<p>也就是说 <strong>GCC（g++）目前只支持</strong> / <strong>你需要写个程序将源代码转换为</strong> 像这样的代码：</p>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+typedef int \u6574\u6570;
+typedef double \u53cc\u7cbe\u5ea6\u5c0f\u6570;
+
+\u6574\u6570 \u7532;
+\u53cc\u7cbe\u5ea6\u5c0f\u6570 \u4e59;
+
+int main() {
+    cin&gt;&gt;\u7532&gt;&gt;\u4e59;
+    cout&lt;&lt;\u7532&lt;&lt;&quot; &quot;&lt;&lt;\u4e59&lt;&lt;endl;
+    return 0;
+}
+</code></pre>
+<p>Damn! 这显然不是我们想要的。</p>
+<h2 id="compiler-matters">Compiler matters</h2>
+<p>既然 GCC 不支持，那我们就换其他编译器！就<a href="https://releases.llvm.org/download.html">换 clang</a> 好了。然而在搭建过程中又碰到了比之前更大的麻烦。在此略提一下：</p>
+<ul>
+<li>
+<p>Clang 一开始会连许多标准库头文件都找不到。它的 build 出来的默认 target 好像是针对 msvc 的。所以在每个编译命令行中加入 <code>--target=x86_64-w64-mingw</code>。（该选项的值根据之前用到的编译器版本设置）</p>
+</li>
+<li>
+<p>Clang 的 <code>float.h</code> 库和 MinGW64 的不兼容，需要<a href="https://stackoverflow.com/questions/57166340">特殊处理</a>。</p>
+</li>
+</ul>
+<p>当一切准备完成后：</p>
+<pre><code>clang++ -target x86_64-w64-mingw test67.cpp
+</code></pre>
+<p>编译成功！</p>
+<h2 id="总结">总结</h2>
+<p>标准早就已经定了，但实现不实现却还和编译器有关。编译器支持了 Unicode 标识符它还要考虑字符编码的问题。经测试，clang 支持带或不带 BOM 的 UTF-8 编码，不支持 UTF-16 或其他 ANSI 编码。毕竟，“通用字符名”是用 Unicode 码位定义的，编译器应支持一些对 Unicode 的编码，而像将 GBK 编码的源代码转为 UTF-8，应该不是编译器擅长做的事吧。</p>
+<p>受限于条件，我未能测试更多的编译器，如 MSVC 等。</p>
+<h3 id="与-oier-的关系">与 OIer 的关系</h3>
+<p><s>没有关系。</s> 目前，洛谷评测用的是 GCC，而 Codeforces 上已经可以选择用 Clang。（由于我所知有限，不能再举例）目前，国内的官方赛事对 C++11 的标准的支持的进展都非常缓慢，所以还是不要想太多。</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zjl37.github.io/post/about/">
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>
