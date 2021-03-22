@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Github Pages 博客建设与写作重心转移 | Zjl37 的小屋</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zjl37.github.io/favicon.ico?v=1616399078467">
+<link rel="stylesheet" href="https://zjl37.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+本文改编自大约一年前某篇日记。
+
+从小学开始，我就有了搭建所谓“个人网站”的想法，并且自始至终践行着白嫖的理念（那时也许还没有“白嫖”一词）。我的路线从百度搜索开始。一开始找到了 f＊w（一个免费建站网站名称），后来其免费版的页面上出现了..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zjl37.github.io">
+        <img src="https://zjl37.github.io/images/avatar.png?v=1616399078467" class="site-logo">
+        <h1 class="site-title">Zjl37 的小屋</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/Zjl37" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      
+    </div>
+    <div class="site-footer">
+      <p>若无特殊说明，所有文章内容采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a> 协议进行许可。</p><br/>
+<p>Proudly using <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></p> | <a class="rss" href="https://zjl37.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Github Pages 博客建设与写作重心转移</h2>
+            <div class="post-date">2021-03-21</div>
+            
+            <div class="post-content" v-pre>
+              <blockquote>
+<p>本文改编自大约一年前某篇日记。</p>
+</blockquote>
+<p>从小学开始，我就有了搭建所谓“个人网站”的想法，并且自始至终践行着白嫖的理念（那时也许还没有“白嫖”一词）。我的路线从百度搜索开始。一开始找到了 f＊w（一个免费建站网站名称），后来其免费版的页面上出现了大面积浮窗广告，舍之，便从 @Parallel_C，用 si＊＊＊＊ar（另一个免费建站网站名称）. 这里广告面积算是减少了，是底部横幅。后来到了初中还邀了 @PMdashi 也搭建了一个。我还了解到 freenom 免费域名，但其可访问性极差。到了这时，我的“个人网站”概况是几张图片，几个空洞的页面，没有什么内容，玩了一段时间就将它搁置了。</p>
+<p>大约一年后，当我再次进入 si＊＊＊＊ar，发现它的免费版增加了对页面个数的限制，至此不能再增加页面，这让我果断弃坑。离这时最近的那个假期里，我便花时间寻找新的建站网站。</p>
+<p>随着我 OI 学习的深入，了解到洛谷，于是有了洛谷博客。这时我见识到了一个现代化的网站应该是什么样子——它应该支持 Markdown 语法；如果有学术需求，还应支持 LaTeX. 这时我也意识到了我的需求的改变：急切的需要用有意义的内容来填充之，较长的观点表达与过程记录最好的载体是文章，于是“博客”一词应更贴近我的需求。</p>
+<p>百度上搜到的题解类文章，大多来自 CSDN 和博客园。但我讨厌这二者，因为有广告，而且排版不是很灵活。尤其博客园（在那个时候）总是被诟病其不够现代化。</p>
+<p>随着国内实名制加强（由于家庭一些原因，我在接下来很长一段时间内都不能拥有自己的手机号，也不是很有必要），以及百度搜索变得越来越恶心（在那一段时间，“百度已死”话题闹得沸沸扬扬），我在百度上搜到的建站网站都不令我满意。于是我转向 Bing 国际版搜索“free website builder 2019”, then a list is given by a result called &quot;Top 10 free website builder 2019&quot;, which brings me to Str＊＊＊＊＊ly. 这里限制少一些，但没有多页面。那 list 上还有 wordpress.com（注意和 wordpress.org 区分开），因为它基于强大的 Wordpress 应用程序，其功能丰富，限制更少，支持 Markdown 和 LaTeX（据说某国外数学博士就在使用其免费版写博客）（没有找到 LaTeX 在哪里）。我试了一下它的 Markdown 渲染效果，竟然极其糟糕。</p>
+<p>以上的所有经历，都是种种被面向商业的软件坑与限制的过程，不再值得一提。</p>
+<p>这个时候，我又看到了一篇洛谷日报“<a href="https://www.luogu.com.cn/blog/ak-ioi/building-a-blog">五分钟搭建自己的博客</a>”，为我打开了新思路。原来他用了 <a href="https://gridea.dev">Gridea</a> 托管静态页面放在 <a href="https://pages.github.com/">Github Pages</a> 上。这时我了解到 Github Pages, 它是一个用来托管静态页面的地方。如果你精通 HTML, 你可以直接写网页。不然的话，可以找另外像 Gridea 这样的静态博客写作软件——你只用专心写作，软件帮你生页面并同步到 Github Pages 上。Gridea 是新兴的软件，在 Github 上开源。当然如 <a href="https://hexo.io/zh-cn/index.html">Hexo</a> 般老牌的软件也有。我将决定从 Gridea 开始。</p>
+<p>然而，这件事又被我搁（鸽）了大约一年。我当时认为，既然用了 Github Pages，就不要错过 Github 其他的服务 / 内容。这不得了，一下子把我带入了开发，开源与自由软件等的大门，并标志着我的又一条兴趣导向的探索路线的开拓。不过，那时另一个话题了。总之由于各种原因，我的 Github Pages 初步建设直到 2021 年春才开始。</p>
+<p>于是，当我准备开始搭建博客那时，我的写作重心已近发生转变：</p>
+<ul>
+<li>洛谷博客——受限于洛谷社区的氛围营造，我认为只有与 OI 较为相关的内容才应发布到洛谷博客，因此以题解居多。</li>
+<li>The Ordinary Book（日记本）——生活中的事</li>
+<li>Github Pages——我感兴趣的技术性内容，and many, many more!</li>
+</ul>
+<p>当我搭建好博客以后，要考虑的事情就更多了：主题，评论，是否要购买域名，交换友链……这些都会在我有空的时间慢慢完成。</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zjl37.github.io/post/ordinary-music-1-wzhs-song/">
+                  <h3 class="post-title">
+                    普通音乐（1）：籀园春风
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>
