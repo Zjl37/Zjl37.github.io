@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>停止使用带有“_GB2312”后缀的字体！ | Zjl37 的小屋</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zjl37.github.io/favicon.ico?v=1621836063514">
+<link rel="stylesheet" href="https://zjl37.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="“楷体_GB2312”和“仿宋_GB2312”是由长城电脑科技于 1994 年设计制作的 TrueType 字体，至今仍在广泛使用。它们的普及是因为在 Windows XP / Windows Server 2003 及以前的 Window..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zjl37.github.io">
+        <img src="https://zjl37.github.io/images/avatar.png?v=1621836063514" class="site-logo">
+        <h1 class="site-title">Zjl37 的小屋</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/Zjl37" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      
+    </div>
+    <div class="site-footer">
+      <p>若无特殊说明，所有文章内容采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a> 协议进行许可。</p><br/>
+<p>Proudly using <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></p> | <a class="rss" href="https://zjl37.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">停止使用带有“_GB2312”后缀的字体！</h2>
+            <div class="post-date">2021-05-23</div>
+            
+            <div class="post-content" v-pre>
+              <p>“楷体_GB2312”和“仿宋_GB2312”是由长城电脑科技于 1994 年设计制作的 TrueType 字体，至今仍在广泛使用。它们的普及是因为在 Windows XP / Windows Server 2003 及以前的 Windows 系统中附带了这两款字体，以及很大程度上各单位部门对公文排版格式的规定与要求。</p>
+<p>然而随着时间推移，这两款字体的问题也显露出来。</p>
+<h2 id="收字太少">收字太少</h2>
+<p>这不是今天的重点，因此略提一二。</p>
+<p>因为这两款字体遵循 GB2312 标准，但也只限于 GB2312 标准，那么它的收字只有 6763 个。GB2312 中没有而 GB18030 或 Unicode 中有的情况，我就不再举例了。谁也不保证你不会碰到这些字。一般软件中当你用到不在字库中的字时就会 fallback 到另一种字体，往往会形式不统一造成不美观。</p>
+<p>GB2312 已转换为推荐性标准，并被更新标准取代。一般成熟的字体的收的字数往往会远超 GB2312 的范围，因此没必要执着于其后缀所赋予的意义。</p>
+<h2 id="字形问题">字形问题</h2>
+<p>在某些情况下，你会看到</p>
+<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2021/05/22/aIxX8dwutWel4sr.png" alt="1360-cross-issue.png" loading="lazy"></figure>
+<p>▲ 问题 1：笔画交叉处出现“空心”</p>
+<figure data-type="image" tabindex="2"><img src="https://i.loli.net/2021/05/22/JP1cfrgMi3BGoHd.png" alt="1360-bold-issue.png" loading="lazy"></figure>
+<p>▲ 问题 2：加粗的字体反而笔画“发虚”，放大仔细看可以发现各笔画粗细不均。</p>
+<p>这些问题深刻的根源在于其字形的问题。</p>
+<figure data-type="image" tabindex="3"><img src="https://i.loli.net/2021/05/22/CjDdytu6ZgoBJlz.png" alt="1360-glyph-cmp.png" loading="lazy"></figure>
+<p>▲ “奋”的字形，左：长城电脑的楷体（字体名称为：“楷体_GB2312”），右：中易楷体（字体名称为：“楷体”）</p>
+<p>以楷体的字形为例，用字体设计工具打开字体文件，发现：长城电脑设计的字形，对每个笔画绘制一个轮廓。中易设计的字形，呈现的是所有笔画合并后的轮廓。事实上，后者的做法是现在几乎所有字体采用的方法。</p>
+<p>看到这里，聪明的你也许已经猜到问题 1 是怎么回事了。下面尝试从技术上解释。如果你不想看，可以跳到下一个小标题。</p>
+<hr>
+<p>我们知道，字形是矢量图形。矢量图用直线和曲线描绘图形的轮廓。用轮廓表示平面上的区域，本来是很简单的，然而因为有表示含有空心区域（如“口”“田”字的中间）的需要，而变得复杂了起来。</p>
+<p>给轮廓规定方向。一般地，如果用顺时针代表填充，那么就用逆时针代表挖去。这是最自然的做法，因为当你合并一些顺时针轮廓时，逆时针轮廓就有可能自然产生：</p>
+<figure data-type="image" tabindex="4"><img src="https://i.loli.net/2021/05/22/wjfyEYmzD98C5R1.png" alt="1360-union-eg.png" loading="lazy"></figure>
+<p>基于上面直观的想法，我们来看绘制矢量图形的填充算法：</p>
+<p>填充一个矢量图形，其核心在于判断每个像素点是否在这个图形内部。对于一个点，我们不妨定义它的</p>
+<pre><code>总卷绕数（Winding number）＝它所处于的顺时针轮廓的数量－它所处于的逆时针轮廓的数量
+</code></pre>
+<figure data-type="image" tabindex="5"><img src="https://i.loli.net/2021/05/22/RCia2Qo6dZEHYlf.png" alt="1360-glyph-with-winding-num.png" loading="lazy"></figure>
+<p>总卷绕数与填充还是不填充的对应关系叫做 Winding Rule，不同的软件和字体标准有不同的规则。以下是两种主要的：</p>
+<ol>
+<li>非零填充：只要卷绕数非 0 就填充</li>
+</ol>
+<p>优点是字形上无需把笔画轮廓合并，显示时就可以拼接好。可以节省字体文件的大小。苹果和微软开发的 Truetype 标准就采用这种规则。</p>
+<ol start="2">
+<li>奇偶填充：当卷绕数是奇数时填充</li>
+</ol>
+<p>优点是无需关心轮廓的方向。Postscript 就采用这种规则。</p>
+<p>于是我们知道：当采用“奇偶填充”规则的软件显示长城电脑的字形时就会出现问题 1。</p>
+<p>然而，我们所见的现实情况更为复杂：软件的实现不一定遵循标准；……甚至同一软件内部的不同功能也会采用不同的规则，比如问题一的截图就是在常用的办公软件里一种“艺术字”的显示效果，但在该软件正文排版中则不会有这样的问题。</p>
+<hr>
+<p>对于没有为不同字重专门设计另一套字形的字体，系统在应用“粗体”效果时就生成所谓“伪粗体”（faux bold）。最常见的生成伪粗体的方法是给文字外圈添加一圈描边。</p>
+<p>现在，我们只要想一想在字形轮廓层面发生了什么，就能理解问题 2 的产生原因。然而，网上并没有找到详细描述生成伪粗体的算法的资料。</p>
+<blockquote>
+<p>下面是我未经证实的猜想：</p>
+<p>在字形设计规范的情况下，字形上所有轮廓不会相交，轮廓的定向使得任一点的总卷绕数只有两种取值。只需把顺时针的轮廓往外扩大，逆时针的轮廓往里缩小即可。从轮廓上任何一点看，不管是顺时针还是逆时针的轮廓，都会向其前进方向的左侧偏移。</p>
+<p>然而，在有“奇偶填充”这种规则的环境下，不是所有字体都会遵循这样的定向规则，于是软件需要手动根据“奇偶填充”判断某一圈轮廓需要向哪个方向偏移。若没有轮廓相交，则用除 A 以外的轮廓计算的 A 内各点的总卷绕数都是相同的。然而，在轮廓有相交的情况下这不成立。万一软件选择了一个交叉处的点，并认为该轮廓是一个内部轮廓，那么它所代表的笔画就会变细而不是加粗了。</p>
+</blockquote>
+<p>要弄清楚问题到底是怎么发生的，必须要看到文字渲染引擎的实现源代码或者有其他确凿证据，然而在文字渲染引擎都不是自由软件的情况下这几乎是不可能的。于是我转而探究什么样的环境会引起问题 2。</p>
+<p>在软件方面，发现 Windows 上各种办公软件（已知 Microsoft Office, WPS 及 LibreOffice）会产生问题 2，写字板不会。这立即使我敏锐地感受到了该问题与传统 Win32 桌面应用和 Modern 应用的差异有关。</p>
+<p>最终，我花了一些时间写了一个<a href="https://1drv.ms/u/s!AmExcGUnhD9-yEShjzyh-QW9AOmk?e=cfG2Qj">测试程序</a>，证明了在 Windows 上 GDI、GDI+ 不会有问题，DirectWrite 有问题。</p>
+<p>这不能说是 DirectWrite 的 bug，因为字形不按标准做，没有人保证显示效果正确，就像 C++ 的 UB 一样。</p>
+<h2 id="参考链接">参考链接</h2>
+<p><a href="https://www.zhihu.com/question/22958337">打印「仿宋_GB2312」字体总在笔画交叉处出现空心，怎么解决？ - 知乎</a></p>
+<p><a href="https://docs.microsoft.com/en-us/typography/opentype/spec/ttch01#the-scan-converter">TrueType Fundamentals - Microsoft Docs</a></p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zjl37.github.io/post/blog-and-writing-centroid/">
+                  <h3 class="post-title">
+                    Github Pages 博客建设与写作重心转移
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>
