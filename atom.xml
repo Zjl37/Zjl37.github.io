@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh_CN">
+  <title>动量星空（旧墟）</title>
+  <link href="https://zjl37.github.io/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://zjl37.github.io"/>
+  <updated>2025-05-21T00:00:00+00:00</updated>
+  <id>https://zjl37.github.io/atom.xml</id>
+  <entry xml:lang="zh_CN">
+    <title>动量星空迁移啦</title>
+    <published>2025-05-21T00:00:00+00:00</published>
+    <updated>2025-05-21T00:00:00+00:00</updated>
+    <author>
+      <name>Unknown</name>
+    </author>
+    <link rel="alternate" href="https://astro.momentum.moe/notes/welcome-2025-migrated/" type="text/html"/>
+    <id>https://astro.momentum.moe/notes/welcome-2025-migrated/</id>
+    <content type="html">&lt;p&gt;欢迎用新域名访问：astro.momentum.moe&lt;&#x2F;p&gt;
+    &lt;p&gt;小伙伴们记得及时更新链接（包括 rss 订阅）哦！&lt;&#x2F;p&gt;
+    </content>
+  </entry>
+</feed>
