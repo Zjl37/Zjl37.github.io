@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh_CN">
+    <title>动量星空 &#x2F; Zjl37 - Posts</title>
+    <link href="https://zjl37.github.io/posts/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://zjl37.github.io/posts/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-09-06T00:00:00+00:00</updated>
+    <id>https://zjl37.github.io/posts/atom.xml</id>
+    <entry xml:lang="zh_CN">
+        <title>普通音乐（3）：欢迎来到皇家花园</title>
+        <published>2023-09-06T00:00:00+00:00</published>
+        <updated>2023-09-06T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://zjl37.github.io/posts/2023/ordinary-music-3-royal-garden/" type="text/html"/>
+        <id>https://zjl37.github.io/posts/2023/ordinary-music-3-royal-garden/</id>
+        
+        <content type="html">&lt;p&gt;欢迎来到“普通音乐计划”的第二期！今天要介绍的是北城浩志的ロイヤルガーデンにようこそ（Royal Garden ni Youkoso）。&lt;&#x2F;p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;有请@&lt;a href=&quot;https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;user&#x2F;299944&quot;&gt;似镜流年&lt;&#x2F;a&gt;为我们介绍！&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;听到这首轻音乐，你会想到的是如梦似幻的青葱岁月，还是成长路上的欢欣喜悦？无论如何，那都将是我们心中的皇家花园吧。这首纯钢琴版相较于原版，虽然少了一分兴奋，但却多出了一丝空灵，如听风吟。希望大家能喜欢这张谱子。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;注：这首歌是2020年及以前温州中学的上课铃。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;qu-pu&quot;&gt;曲谱&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#qu-pu&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;s2.loli.net&#x2F;2023&#x2F;09&#x2F;07&#x2F;eUsFMZb1pxH29Rv.png&quot; alt=&quot;欢迎来到皇家花园-1.png&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;s2.loli.net&#x2F;2023&#x2F;09&#x2F;07&#x2F;AeJjcs6NzE7ZfhR.png&quot; alt=&quot;欢迎来到皇家花园-2.png&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;听钢琴&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;下载曲谱和mp3：&lt;a href=&quot;https:&#x2F;&#x2F;wwtt.lanzouw.com&#x2F;iESIc17p01mh&quot;&gt;https:&#x2F;&#x2F;wwtt.lanzouw.com&#x2F;iESIc17p01mh&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;密码：&lt;code&gt;a5st&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;song?id=31477757&quot;&gt;&lt;strong&gt;听原曲&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt;（网易云）&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="zh_CN">
+        <title>正整数幂和表示为多项式——我的探究</title>
+        <published>2022-08-07T13:05:14+00:00</published>
+        <updated>2022-08-07T13:05:14+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://zjl37.github.io/posts/2022/my-arduous-way-to-faulhabers-formula/" type="text/html"/>
+        <id>https://zjl37.github.io/posts/2022/my-arduous-way-to-faulhabers-formula/</id>
+        
+        <content type="html">&lt;script type=&quot;text&#x2F;x-mathjax-config&quot;&gt;
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [[&#x27;$&#x27;,&#x27;$&#x27;], [&#x27;\\(&#x27;,&#x27;\\)&#x27;]]}
+});
+&lt;&#x2F;script&gt;
+&lt;script type=&quot;text&#x2F;javascript&quot; async
+  src=&quot;https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;mathjax&#x2F;2.7.7&#x2F;latest.js?config=TeX-MML-AM_CHTML&quot;&gt;
+&lt;&#x2F;script&gt;
+&lt;p&gt;在中学阶段我们都学过前n个正整数的求和公式：&lt;&#x2F;p&gt;
+&lt;p&gt;$$ 1 + 2 + \cdots + n = \frac{n(n + 1)}2$$&lt;&#x2F;p&gt;
+&lt;p&gt;有的同学还知道他们的平方和、立方和公式：&lt;&#x2F;p&gt;
+&lt;p&gt;$$ 1^2 + 2^2 + \cdots + n^2 = \frac{n(n + 1)(2n + 1)}{6} $$&lt;&#x2F;p&gt;
+&lt;p&gt;$$ 1^3 + 2^3 + \cdots + n^3 = \left(\frac{n(n + 1)}{2}\right)^2 $$&lt;&#x2F;p&gt;
+&lt;p&gt;注意到以上式子右边都可化为关于 $n$ 的多项式，且次数比左边待求和的数幂次正好高一，于是猜想：前 $n$ 个正整数的 $m$ 次幂之和可以表示为 $n$ 的 $m+1$ 次多项式。现在我想知道，能否求出这个多项式的各项系数的通项。&lt;&#x2F;p&gt;
+&lt;!--more--&gt;
+&lt;h3 id=&quot;wen-ti&quot;&gt;问题&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#wen-ti&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;设 $ S_m(n) = \sum_{x=1}^n x^m = \sum_{i=1}^{m+1} a_i n^i $，用含有 $i, m$ 的式子表示 $a_i$。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;di-yi-jie-duan-di-tui-gong-shi-wu-fa-zhao-xun-de-gui-lu&quot;&gt;第一阶段：递推公式；无法找寻的规律&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#di-yi-jie-duan-di-tui-gong-shi-wu-fa-zhao-xun-de-gui-lu&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;考虑 $ S_m(n) - S_m(n-1) $：&lt;&#x2F;p&gt;
+&lt;p&gt;$$ n^m = \sum_{i=1}^{m+1} a^i \left(n^i - (n-1)^i\right) $$&lt;&#x2F;p&gt;
+&lt;p&gt;用二项式定理展开 $(n-1)^i$：&lt;&#x2F;p&gt;
+&lt;p&gt;$$\begin{align*}
+n^m &amp;amp; = \sum_{i=1}^{m+1} a^i \left(n^i - \sum_{j=0}^i \binom{i}{j} n^j (-1)^{i-j}\right)  \\
+&amp;amp; = \sum_{i=1}^{m+1} a^i \left(- \sum_{j=1}^i \binom{i}{j} n^j (-1)^{i-j}\right)
+\end{align*}$$&lt;&#x2F;p&gt;
+&lt;p&gt;交换求和顺序，则&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+n^m = \sum_{j=0}^{m} \sum_{i=j+1}^{m+1} a^i \binom{i}{j} (-1)^{i-j+1} n^j
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;比较两边 $n^j$ 的系数，可得：&lt;&#x2F;p&gt;
+&lt;p&gt;对于 $j=m$，$$a_{m+1} = \frac 1 {m+1}$$&lt;&#x2F;p&gt;
+&lt;p&gt;对于 $0 \le j &amp;lt; m$，$$\sum_{i=j+1}^{m+1} a_i \binom {i}{j} (-1)^{i-j+1} = 0 $$&lt;&#x2F;p&gt;
+&lt;p&gt;则 $$(j+1)a_{j+1} = \sum_{i=j+2}^{m+1} a_i \binom {i}{j} (-1)^{i-j}$$&lt;&#x2F;p&gt;
+&lt;p&gt;这就得到了 $a_i$ 的递推公式。可以依次算出：&lt;&#x2F;p&gt;
+&lt;p&gt;$$ a_m = \frac 1 2, a_{m-1} = \frac m {12}, a_{m-2} = 0, $$
+$$ a_{m-3} = -\frac {m(m-1)(m-2)} {720}, \cdots $$&lt;&#x2F;p&gt;
+&lt;p&gt;发现 $a_{m-3}$ 中的一段 $m$ 的下降幂，于是猜想 $a_j$ 可以表示为 $b_{m+1-j} \frac {m!} {j!}, \quad \left(b_{m+1-j} \in \mathbb R\right)$&lt;&#x2F;p&gt;
+&lt;p&gt;于是 $b_k$ 有如下递推关系和前几项：&lt;&#x2F;p&gt;
+&lt;p&gt;$$\begin{equation}
+b_k = \sum_{i=0}^{k-1} b_i \frac {(-1)^{k-i+1}}{(k-i+1)!}
+\end{equation}$$&lt;&#x2F;p&gt;
+&lt;p&gt;$$b_0 = 1, b_1 = \frac 1 2, b_2 = \frac 1 {12}, $$
+$$b_3 = 0, b_4 = -\frac 1 {720}, b_5 = 0, $$
+$$b_6 = \frac 1 {6 \cdot 7!}, \cdots $$&lt;&#x2F;p&gt;
+&lt;p&gt;到了这里，$b_k$ 就找不到什么规律了。于是这个问题被我搁置了，直到最近才被我从笔记本里翻出来看到，重新研究。&lt;&#x2F;p&gt;
+&lt;p&gt;虽然…但是系数有了递推公式，便可以解决一些问题，如在多项式时间内计算正整数幂和。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;di-er-jie-duan-bo-nu-li-shu-chu-tan&quot;&gt;第二阶段：伯努利数初探&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#di-er-jie-duan-bo-nu-li-shu-chu-tan&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;上网搜索，发现我要求的系数 $a_i$ 跟伯努利数很有关系。事实上，如果令 $b_j = \frac {(-1)^j\beta_i}{j!}$，代入 (1) 就得到&lt;&#x2F;p&gt;
+&lt;p&gt;$$\frac {\beta_k}{k!} = - \sum_{i=0}^{k-1} \frac {\beta_i}{i!(k-i+1)!}$$
+$$(k+1)\beta_k = - \sum_{i=0}^{k-1} \frac {\beta_i(k+1)!}{i!(k-i+1)!}$$
+$$\begin{equation}
+\beta_k = - \frac 1{k+1} \sum_{i=0}^{k-1} \beta_i \binom{k+1}{i}
+\end{equation}$$&lt;&#x2F;p&gt;
+&lt;p&gt;这就是伯努利数的递推公式，$\beta_i$就是伯努利数。伯努利数的前几项是：&lt;&#x2F;p&gt;
+&lt;p&gt;$$1, -\frac 1 2, \frac 1 6, 0, -\frac 1 {30}, 0, \frac 1 {42}, \cdots$$&lt;&#x2F;p&gt;
+&lt;p&gt;于是我们要求的 $a_i$ 可以暂时写成
+$\frac {(-1)^{m+1-i} \beta_{m+1-i} m!}{(m+1-i)! i!} = \frac {(-1)^{m+1-i}}{m+1} \beta_{m+1-i} \binom{m+1}{i}$&lt;&#x2F;p&gt;
+&lt;p&gt;下面来从伯努利数的定义推导以下它的递推公式。&lt;&#x2F;p&gt;
+&lt;p&gt;伯努利数的生成函数定义是：$$\frac x {e^x - 1} = \sum_{n=0}^\infty \beta_n \frac {x^n} {n!}$$&lt;&#x2F;p&gt;
+&lt;p&gt;把 $e^x -1 $ 乘过去，并把 $e^x$ 泰勒展开：&lt;&#x2F;p&gt;
+&lt;p&gt;$$x = \sum_{n=0}^\infty \beta_n \frac {x^n} {n!} \sum_{n=1}^\infty \frac {x^n}{n!}$$&lt;&#x2F;p&gt;
+&lt;p&gt;再把 x 除过去：&lt;&#x2F;p&gt;
+&lt;p&gt;$$1 = \left(\sum_{n=0}^\infty \beta_n \frac {x^n} {n!}\right) \cdot \left(\sum_{n=0}^\infty \frac {x^n}{(n+1)!}\right)$$&lt;&#x2F;p&gt;
+&lt;p&gt;通过对应右边展开式（柯西乘积）的 $x^n$ 系数，知&lt;&#x2F;p&gt;
+&lt;p&gt;对于常数项，$\beta_0 = 1$&lt;&#x2F;p&gt;
+&lt;p&gt;对于 $x^n$ 项，$\sum_{i=0}^n \frac {\beta_i}{i! (n-i+1)!} = 0$&lt;&#x2F;p&gt;
+&lt;p&gt;单独取出 $\beta_n$，稍作调整就得到 (2) 式。&lt;&#x2F;p&gt;
+&lt;p&gt;伯努利数应用广泛，非常深奥。由于时间所限，本文就写到这里。&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="zh_CN">
+        <title>美术作业：素描</title>
+        <published>2022-05-01T19:55:50+00:00</published>
+        <updated>2022-05-01T19:55:50+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://zjl37.github.io/posts/2022/artwork-sketch-a-stone-and-a-palm-tree/" type="text/html"/>
+        <id>https://zjl37.github.io/posts/2022/artwork-sketch-a-stone-and-a-palm-tree/</id>
+        
+        <content type="html">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;s2.loli.net&#x2F;2022&#x2F;05&#x2F;01&#x2F;hUeHoi2NfKlOgXE.png&quot; alt=&quot;sketch-a-stone-and-a-palm-tree.png&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="zh_CN">
+        <title>简洁的 python——短代码欣赏</title>
+        <published>2021-10-17T11:38:55+00:00</published>
+        <updated>2021-10-17T11:38:55+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://zjl37.github.io/posts/2021/concise-python-1/" type="text/html"/>
+        <id>https://zjl37.github.io/posts/2021/concise-python-1/</id>
+        
+        <content type="html">&lt;p&gt;人们都说 python 语言简洁优雅，表达力强。下面我们通过&lt;a href=&quot;http:&#x2F;&#x2F;python.wzms.com&#x2F;&quot;&gt;温州中学 python 训练平台&lt;&#x2F;a&gt;上的一些题目来~~体会它的简洁性~~（完成一些最短代码挑战）。&lt;&#x2F;p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;&lt;strong&gt;警告⚠：请不要直接复制本文中的代码提交到 OJ 上。&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;if-else-biao-da-shi&quot;&gt;&lt;code&gt;if-else&lt;&#x2F;code&gt; 表达式&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#if-else-biao-da-shi&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;code&gt;if-else&lt;&#x2F;code&gt; 不仅可以作控制语句，也可作表达式：&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;pan-duan-neng-fou-gou-cheng-san-jiao-xing&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;python.wzms.com&#x2F;s&#x2F;1&#x2F;40&quot;&gt;判断能否构成三角形&lt;&#x2F;a&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#pan-duan-neng-fou-gou-cheng-san-jiao-xing&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;a, b, c = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;map&lt;&#x2F;span&gt;&lt;span&gt;(int, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;input&lt;&#x2F;span&gt;&lt;span&gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;split&lt;&#x2F;span&gt;&lt;span&gt;())
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;yes&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;a+b &amp;gt; c and a+c &amp;gt; b and b+c &amp;gt; a &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else &lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;no&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;也可以堆叠：&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;mi-ma-fan-yi&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;python.wzms.com&#x2F;s&#x2F;1&#x2F;61&quot;&gt;密码翻译&lt;&#x2F;a&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#mi-ma-fan-yi&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;conv = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;c&lt;&#x2F;span&gt;&lt;span&gt;: &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;a&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;c == &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;z&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else &lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;A&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;c == &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Z&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;chr&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;ord&lt;&#x2F;span&gt;&lt;span&gt;(c)+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;c.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;isalpha&lt;&#x2F;span&gt;&lt;span&gt;() &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else &lt;&#x2F;span&gt;&lt;span&gt;c
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&amp;#39;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;join&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;map&lt;&#x2F;span&gt;&lt;span&gt;(conv, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;input&lt;&#x2F;span&gt;&lt;span&gt;())))
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;注意过多的堆叠可能导致代码可读性下降。在本文所展示的大多代码中，为了完成最短代码挑战，还使用了短变量名，省略中间变量，lambda 函数等手段。读者在实践中应当考虑权衡代码可读性。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ke-die-dai-dui-xiang-yu-han-shu-shi-bian-cheng-chu-tan&quot;&gt;可迭代对象与函数式编程初探&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#ke-die-dai-dui-xiang-yu-han-shu-shi-bian-cheng-chu-tan&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;让我们从读入一行空白字符分割的整数说起：&lt;code&gt;a, b, c = map(int, input().split())&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;input()&lt;&#x2F;code&gt; 从标准输入中读入一行；&lt;code&gt;_.split()&lt;&#x2F;code&gt; 将其按照空白字符将其分割成一个字符串的列表；&lt;code&gt;map(int, _)&lt;&#x2F;code&gt; 将 &lt;code&gt;int&lt;&#x2F;code&gt; 函数作用于列表中每一个元素（将每一个元素转换为整数型），并返回一个迭代器。将其解包并赋值给 &lt;code&gt;a, b, c&lt;&#x2F;code&gt;：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;input&lt;&#x2F;span&gt;&lt;span&gt;()
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;11 45 14
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;11 45 14&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;split&lt;&#x2F;span&gt;&lt;span&gt;()
+&lt;&#x2F;span&gt;&lt;span&gt;[&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;11&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;, &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;45&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;, &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;14&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;]
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;map&lt;&#x2F;span&gt;&lt;span&gt;(int, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;map &lt;&#x2F;span&gt;&lt;span&gt;object at &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0x7f290437cca0&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;list&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_&lt;&#x2F;span&gt;&lt;span&gt;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# 为了查看迭代器的所有元素，将其转换为列表
+&lt;&#x2F;span&gt;&lt;span&gt;[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;11&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;45&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;14&lt;&#x2F;span&gt;&lt;span&gt;]
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; a, b, c = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(a, b, c)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;11 45 14
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;下面介绍 &lt;code&gt;map&lt;&#x2F;code&gt; 和 &lt;code&gt;filter&lt;&#x2F;code&gt; 的语法。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;map&lt;&#x2F;code&gt; 的作用就是对一个序列中的每一个元素作一个变换，其名字可以理解为映射。简单的 &lt;code&gt;map&lt;&#x2F;code&gt; 语法是 &lt;code&gt;map(func, iter)&lt;&#x2F;code&gt;，其中 &lt;code&gt;func&lt;&#x2F;code&gt; 是一个函数对象，&lt;code&gt;iter&lt;&#x2F;code&gt; 是一个可迭代对象。假如 &lt;code&gt;iter&lt;&#x2F;code&gt; 对应的序列为 &lt;code&gt;[a0, a1, a2, ...]&lt;&#x2F;code&gt; 那么 &lt;code&gt;map&lt;&#x2F;code&gt; 的返回值就对应 &lt;code&gt;[func(a0), func(a1), func(a2), ...]&lt;&#x2F;code&gt;。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;filter&lt;&#x2F;code&gt; 的语法是 &lt;code&gt;filter(predicate, iter)&lt;&#x2F;code&gt;，返回值也是一个迭代器。&lt;code&gt;predicate&lt;&#x2F;code&gt; 是一个接受一个参数，返回一个布尔值的函数对象。它将 &lt;code&gt;iter&lt;&#x2F;code&gt; 中每一个使 &lt;code&gt;predicate&lt;&#x2F;code&gt; 取值为真的元素筛选出来。比如：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#bf616a;color:#2b303b;&quot;&gt;def&lt;&#x2F;span&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;is_odd&lt;&#x2F;span&gt;&lt;span&gt;(x):
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;...     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;x%&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2 &lt;&#x2F;span&gt;&lt;span&gt;== &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;... 
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;list&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;filter&lt;&#x2F;span&gt;&lt;span&gt;(is_odd, [c, b, a]))
+&lt;&#x2F;span&gt;&lt;span&gt;[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;45&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;11&lt;&#x2F;span&gt;&lt;span&gt;]
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;再比如：&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;jiang-hua-mo-shi&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;python.wzms.com&#x2F;s&#x2F;1&#x2F;100&quot;&gt;讲话模式&lt;&#x2F;a&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#jiang-hua-mo-shi&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;re
+&lt;&#x2F;span&gt;&lt;span&gt;s, d = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;input&lt;&#x2F;span&gt;&lt;span&gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;lower&lt;&#x2F;span&gt;&lt;span&gt;(), {}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;wd &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;re.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;findall&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;[a-z]+&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;, s):
+&lt;&#x2F;span&gt;&lt;span&gt;	d[wd] = d.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get&lt;&#x2F;span&gt;&lt;span&gt;(wd, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;) + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span&gt;mf = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;max&lt;&#x2F;span&gt;&lt;span&gt;(d.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;values&lt;&#x2F;span&gt;&lt;span&gt;())
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;min&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;filter&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: d[x] == mf, d)), mf)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;解释：当上述程序运行到末两行时，&lt;code&gt;d&lt;&#x2F;code&gt; 已经是一个含有所有单词及其对应出现次数的字典。&lt;code&gt;mf&lt;&#x2F;code&gt; 是单词出现次数的最大值。&lt;code&gt;lambda x: d[x] == mf&lt;&#x2F;code&gt; 是一个函数对象，传入参数 &lt;code&gt;x&lt;&#x2F;code&gt;，如果字典 &lt;code&gt;d&lt;&#x2F;code&gt; 中 &lt;code&gt;x&lt;&#x2F;code&gt; 对应的值（单词 &lt;code&gt;x&lt;&#x2F;code&gt; 的出现次数）等于 &lt;code&gt;mf&lt;&#x2F;code&gt;（出现次数最多），它返回真。&lt;code&gt;filter(_, d)&lt;&#x2F;code&gt; 则从字典的键中选出“出现次数最多”的键（单词），并 &lt;code&gt;min(_)&lt;&#x2F;code&gt; 取出字典序最小者。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;del&gt;诶，好像节省的码量不多（&lt;&#x2F;del&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;请注意：程序中的正则表达式 &lt;code&gt;[a-z]+&lt;&#x2F;code&gt; 不能准确描述题目中所定义的单词，但暂时能通过所有数据。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;正则表达式博大精深，在此篇幅所限不作介绍。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;可见，python 的函数式编程非常依赖迭代器的概念。基于迭代器的内置函数还有很多。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;qian-fu-zhe&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;python.wzms.com&#x2F;s&#x2F;1&#x2F;109&quot;&gt;潜伏者&lt;&#x2F;a&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#qian-fu-zhe&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;q&lt;&#x2F;span&gt;&lt;span&gt;(): &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Failed&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;); &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;exit&lt;&#x2F;span&gt;&lt;span&gt;()
+&lt;&#x2F;span&gt;&lt;span&gt;p1, p2, p3, d, s = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;input&lt;&#x2F;span&gt;&lt;span&gt;(), &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;input&lt;&#x2F;span&gt;&lt;span&gt;(), &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;input&lt;&#x2F;span&gt;&lt;span&gt;(), {}, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span&gt;()
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;u, v &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;zip&lt;&#x2F;span&gt;&lt;span&gt;(p1, p2):
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;u in d and d[u] != v: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;q&lt;&#x2F;span&gt;&lt;span&gt;()
+&lt;&#x2F;span&gt;&lt;span&gt;    d[u] = v
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;c &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;ABCDEFGHIJKLMNOPQRSTUVWXYZ&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;c not in d or d[c] in s: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;q&lt;&#x2F;span&gt;&lt;span&gt;()
+&lt;&#x2F;span&gt;&lt;span&gt;    s.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add&lt;&#x2F;span&gt;&lt;span&gt;(d[c])
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&amp;#39;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;join&lt;&#x2F;span&gt;&lt;span&gt;(d[c] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;c &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;p3))
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;解释：第三行中， &lt;code&gt;zip(p1, p2)&lt;&#x2F;code&gt;  将两个可迭代对象同时遍历，节省了枚举下标访问带来的时间开销、码量（有时，还有更多变量带来的含义混乱）。具体地，&lt;code&gt;zip(p1, p2)&lt;&#x2F;code&gt; 会返回一个迭代器，对应序列 &lt;code&gt;[(p1[0], p2[0]), (p1[1], p2[1]), (p1[2], p2[2]), ...]&lt;&#x2F;code&gt;，&lt;code&gt;for&lt;&#x2F;code&gt; 会遍历这个序列并将每个元组解包赋值给 &lt;code&gt;u, v&lt;&#x2F;code&gt;。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;zhong-zu-zui-da-shu&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;python.wzms.com&#x2F;s&#x2F;1&#x2F;24&quot;&gt;重组最大数&lt;&#x2F;a&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#zhong-zu-zui-da-shu&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&amp;#39;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;join&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;sorted&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;input&lt;&#x2F;span&gt;&lt;span&gt;(), &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;reverse&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;)))
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;解释：&lt;code&gt;sorted(x)&lt;&#x2F;code&gt; 返回 &lt;code&gt;x&lt;&#x2F;code&gt; 中所有元素升序排序后的列表。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;sheng-cheng-qi-biao-da-shi-he-lie-biao-tui-dao-shi&quot;&gt;生成器表达式和列表推导式&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#sheng-cheng-qi-biao-da-shi-he-lie-biao-tui-dao-shi&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;方括号中含有 for 的表达式，称为列表推导式，可以推导出一个含有自变量的表达式的列表，如：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;*x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;[a, b, c]]
+&lt;&#x2F;span&gt;&lt;span&gt;[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;23&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;91&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;29&lt;&#x2F;span&gt;&lt;span&gt;]
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;方括号换成圆括号，则是生成器表达式，生成器返回的是迭代器而不是列表，这样就可以支持惰性求值，加快运行速度。一个特性是生成器表达式的圆括号可以与函数调用的括号共用。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;xun-zhao-wan-mei-shu&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;python.wzms.com&#x2F;s&#x2F;1&#x2F;102&quot;&gt;寻找完美数&lt;&#x2F;a&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#xun-zhao-wan-mei-shu&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;a, b = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;input&lt;&#x2F;span&gt;&lt;span&gt;()), &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;input&lt;&#x2F;span&gt;&lt;span&gt;())
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;\n&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;join&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;str&lt;&#x2F;span&gt;&lt;span&gt;(x) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;6&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;28&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;496&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;8128&lt;&#x2F;span&gt;&lt;span&gt;] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;a &amp;lt;= x &amp;lt;= b))
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;解释：&lt;code&gt;[6, 28, 496, 8128]&lt;&#x2F;code&gt; 预先算好数据范围内的所有完美数。&lt;code&gt;(str(x) for x in _ if a &amp;lt;= x &amp;lt;= b)&lt;&#x2F;code&gt; 将列表中在给定范围内的数字选出来，转成字符串。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;del&gt;诶，好像 map 和 filter 能做到的，生成器表达式和列表推导式都能做，那么要 map 和 filter 有何用呢？&lt;&#x2F;del&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;shu-zi-tong-ji&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;python.wzms.com&#x2F;s&#x2F;1&#x2F;46&quot;&gt;数字统计&lt;&#x2F;a&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#shu-zi-tong-ji&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;l, r = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;map&lt;&#x2F;span&gt;&lt;span&gt;(int, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;input&lt;&#x2F;span&gt;&lt;span&gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;split&lt;&#x2F;span&gt;&lt;span&gt;())
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;sum&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;str&lt;&#x2F;span&gt;&lt;span&gt;(x).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;count&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(l, r+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;)))
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;**（11月8日更新）**极端的运用：&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;cai-se-tu-xiang-zhuan-cheng-hei-bai-tu-xiang&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;python.wzms.com&#x2F;s&#x2F;1&#x2F;115&quot;&gt;彩色图像转成黑白图像&lt;&#x2F;a&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#cai-se-tu-xiang-zhuan-cheng-hei-bai-tu-xiang&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;sys
+&lt;&#x2F;span&gt;&lt;span&gt;raw = sys.stdin.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;readlines&lt;&#x2F;span&gt;&lt;span&gt;()
+&lt;&#x2F;span&gt;&lt;span&gt;n, m = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;map&lt;&#x2F;span&gt;&lt;span&gt;(int, raw[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;].&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;split&lt;&#x2F;span&gt;&lt;span&gt;())
+&lt;&#x2F;span&gt;&lt;span&gt;bw = [&amp;#39;&amp;#39;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;join&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;map&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;r&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;g&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;b&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;str&lt;&#x2F;span&gt;&lt;span&gt;(+(r*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.299 &lt;&#x2F;span&gt;&lt;span&gt;+ g*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.587 &lt;&#x2F;span&gt;&lt;span&gt;+ b*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.114 &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;132&lt;&#x2F;span&gt;&lt;span&gt;)),
+&lt;&#x2F;span&gt;&lt;span&gt;                  *[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;map&lt;&#x2F;span&gt;&lt;span&gt;(int, ln.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;split&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;,&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;))]*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;)) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;ln &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;raw[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;+n]]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;\n&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;join&lt;&#x2F;span&gt;&lt;span&gt;(bw))
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;ln &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;raw[n+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;:]:
+&lt;&#x2F;span&gt;&lt;span&gt;    i, j = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;map&lt;&#x2F;span&gt;&lt;span&gt;(int, ln.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;split&lt;&#x2F;span&gt;&lt;span&gt;())
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(bw[i-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;][j-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;])
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;解释（图像的一行是如何处理的）：&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;正号添加在逻辑值前面，可以将其提升为整数（0 或 1），所以 &lt;code&gt;conv = lambda r, g, b: str(+(r*0.299 + g*0.587 + b*0.114 &amp;lt; 132))&lt;&#x2F;code&gt; 是一个接受三个参数，计算黑白值并返回字符串 &lt;code&gt;&#x27;0&#x27;&lt;&#x2F;code&gt; 或 &lt;code&gt;&#x27;1&#x27;&lt;&#x2F;code&gt; 的函数。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;ln&lt;&#x2F;code&gt; 是输入文件中的一行；&lt;code&gt;it = map(int, _.split(&#x27;,&#x27;))&lt;&#x2F;code&gt; 是一个迭代器，含有这一行中以逗号分隔的整数；&lt;code&gt;[it]*3&lt;&#x2F;code&gt; 是含有三个这个迭代器的列表；&lt;code&gt;map(conv, *_)&lt;&#x2F;code&gt; 将该列表解包传给 &lt;code&gt;map&lt;&#x2F;code&gt;，相当于 &lt;code&gt;map(conv, it, it, it)&lt;&#x2F;code&gt;。由于 python 保证参数的求值顺序是从左到右，且刚刚的列表乘法是元素的浅拷贝，所以三个元素是同一个迭代器——这非常关键，所以 &lt;code&gt;map&lt;&#x2F;code&gt; 会三次访问 &lt;code&gt;it&lt;&#x2F;code&gt;，&lt;code&gt;conv&lt;&#x2F;code&gt; 就按顺序得到连续的三个整数（而不是同一个整数三次）。（如果你能看懂&lt;a href=&quot;https:&#x2F;&#x2F;docs.python.org&#x2F;zh-cn&#x2F;3&#x2F;library&#x2F;itertools.html#itertools-recipes&quot;&gt;这里 more-itertools&lt;&#x2F;a&gt; 中的 &lt;code&gt;grouper&lt;&#x2F;code&gt; 函数，那么你应该能看懂这里的。）&lt;code&gt;&#x27;&#x27;.join(_)&lt;&#x2F;code&gt;，就能得到一个表示黑白图像的一行的 01 字符串。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;can-kao-zi-liao&quot;&gt;参考资料&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#can-kao-zi-liao&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;docs.python.org&#x2F;zh-cn&#x2F;3&#x2F;howto&#x2F;functional.html&quot;&gt;函数式编程指引&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;最后，欢迎读者来信（qq邮箱）讨论。&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="zh_CN">
+        <title>你需要一个 C++ 解释器——cling</title>
+        <published>2021-08-29T07:09:56+00:00</published>
+        <updated>2021-08-29T07:09:56+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://zjl37.github.io/posts/2021/cling-the-cpp-interpreter/" type="text/html"/>
+        <id>https://zjl37.github.io/posts/2021/cling-the-cpp-interpreter/</id>
+        
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;这个结构体的 sizeof 大小是多少？&lt;&#x2F;li&gt;
+&lt;li&gt;unsigned 与 long long 相乘的类型是什么？&lt;&#x2F;li&gt;
+&lt;li&gt;你是否遇到过，想要测试一个简短的 C++ 代码，而为创建一个新文件，等待编译的漫长过程感到烦躁？&lt;&#x2F;li&gt;
+&lt;li&gt;可不可以让 C++ 像 python 一样交互地运行？&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Well，你需要的是一个交互式 C++ 解释器！&lt;&#x2F;p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;你没听错，在技术日新月异的今天，人们可以把解释型的语言做出“编译器”，把编译型的语言做出解释器……今天要介绍的 &lt;a href=&quot;https:&#x2F;&#x2F;root.cern&#x2F;cling&#x2F;&quot;&gt;cling&lt;&#x2F;a&gt; 正是一个基于 LLVM 和 clang 的交互式 C++ 解释器。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;xuan-ji-shi-ke&quot;&gt;炫技时刻&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#xuan-ji-shi-ke&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;在终端中启动 cling：&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ cling -std=c++17
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;会看见这样一个界面：&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;****************** CLING ******************
+&lt;&#x2F;span&gt;&lt;span&gt;* Type C++ code and press enter to run it *
+&lt;&#x2F;span&gt;&lt;span&gt;*             Type .q to exit             *
+&lt;&#x2F;span&gt;&lt;span&gt;*******************************************
+&lt;&#x2F;span&gt;&lt;span&gt;[cling]$
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;在 $ 后面就可以输入 C++ 代码了：&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;[cling]$ 15u*16ll
+&lt;&#x2F;span&gt;&lt;span&gt;(long long) 240
+&lt;&#x2F;span&gt;&lt;span&gt;[cling]$ struct node {
+&lt;&#x2F;span&gt;&lt;span&gt;[cling]$ ?   int v, sz;
+&lt;&#x2F;span&gt;&lt;span&gt;[cling]$ ?   node *ch[26], *fa;
+&lt;&#x2F;span&gt;&lt;span&gt;[cling]$ ?   }
+&lt;&#x2F;span&gt;&lt;span&gt;[cling]$ sizeof(node)
+&lt;&#x2F;span&gt;&lt;span&gt;(unsigned long) 224
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;cling 很棒地实现了 REPL，即 Read-evaluate-print loop，读取—求值—打印的循环。玩过 python 的都知道，每当输入一行表达式就立即得出值（以及类型）的感觉。&lt;&#x2F;p&gt;
+&lt;p&gt;在 cling 中，没有分号结尾的被视为表达式，会显示类型和值，以分号结尾的语句则不会。&lt;&#x2F;p&gt;
+&lt;p&gt;再来看一些例子：&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;[cling]$ long long v = 1145141919810
+&lt;&#x2F;span&gt;&lt;span&gt;(long long) 1145141919810
+&lt;&#x2F;span&gt;&lt;span&gt;[cling]$ scanf(&amp;quot;%d&amp;quot;, &amp;amp;v)
+&lt;&#x2F;span&gt;&lt;span&gt;input_line_24:2:14: warning: format specifies type &amp;#39;int *&amp;#39; but the argument has type &amp;#39;long long *&amp;#39; [-Wformat]
+&lt;&#x2F;span&gt;&lt;span&gt; scanf(&amp;quot;%d&amp;quot;, &amp;amp;v)
+&lt;&#x2F;span&gt;&lt;span&gt;        ~~   ^~
+&lt;&#x2F;span&gt;&lt;span&gt;        %lld
+&lt;&#x2F;span&gt;&lt;span&gt;32767
+&lt;&#x2F;span&gt;&lt;span&gt;(int) 1
+&lt;&#x2F;span&gt;&lt;span&gt;[cling]$ v
+&lt;&#x2F;span&gt;&lt;span&gt;(long long) 1142461333503
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;编译警告很友好，并且你可能会注意到有个 &lt;code&gt;(int) 1&lt;&#x2F;code&gt;——如果你平时比较粗心，你可能今天才想起 &lt;code&gt;scanf&lt;&#x2F;code&gt; 是有返回值的！&lt;&#x2F;p&gt;
+&lt;p&gt;设计测试运算符优先级的表达式：&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;[cling]$ 3&amp;lt;&amp;lt;2|1
+&lt;&#x2F;span&gt;&lt;span&gt;(int) 13
+&lt;&#x2F;span&gt;&lt;span&gt;[cling]$ 3&amp;lt;&amp;lt;(2|1)
+&lt;&#x2F;span&gt;&lt;span&gt;(int) 24
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;退出：&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;[cling]$ .q
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;像 &lt;code&gt;.q&lt;&#x2F;code&gt; 一样，cling 在 C++ 语言之外自身还有一些以点开头的特殊命令，如 &lt;code&gt;.L&lt;&#x2F;code&gt; 可以直接加载另一个 C++ 文件里的内容等等，具体可以参考官网。&lt;&#x2F;p&gt;
+&lt;p&gt;cling 的更多玩法请读者自行探索。也许你过几天就需要它，为什么不现在就将他安装了呢？&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;an-zhuang-fang-fa&quot;&gt;安装方法&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#an-zhuang-fang-fa&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;fang-fa-1-shou-dong-an-zhuang&quot;&gt;方法 1 手动安装&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#fang-fa-1-shou-dong-an-zhuang&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;前提条件：你最好得使用类 Linux 的系统！目前没有针对 Windows 原生编译好的程序。&lt;&#x2F;strong&gt; 在 Windows 上用 WSL 也是可以的。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: 下面的步骤写的比较简略，需要一定的 Linux 实践经验。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;到其官网&lt;a href=&quot;https:&#x2F;&#x2F;root.cern&#x2F;download&#x2F;cling&#x2F;&quot;&gt;这里&lt;&#x2F;a&gt;下载你对应的操作系统的编译好的文件。&lt;&#x2F;p&gt;
+&lt;p&gt;注意：因为 cling 基于 LLVM 和 clang 构建，它会附带一整个 clang 编译器，&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;导致编译好的文件非常大，做好准备让你的磁盘少掉一两个 G。&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;它附带的 clang 通常比你平常用的版本老。因此建议你放在别的（如 &lt;code&gt;&#x2F;opt&lt;&#x2F;code&gt;）目录下，并只创建一个 cling 的符号链接到 &lt;code&gt;&#x2F;usr&#x2F;bin&#x2F;&lt;&#x2F;code&gt; 以免混淆 clang 的版本。&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;然而，你会发现官方所谓《 Ｎ ｉ ｇ ｈ ｔ ｌ ｙ 　 ｂ ｕ ｉ ｌ ｄ 》最近一个版本是 2020 年 11 月编译的了。如果你嫌老……&lt;&#x2F;p&gt;
+&lt;p&gt;我用学校机房的“破”电脑花费了一个晚上，针对 Ubuntu 20.04 自己编译了一个 0.9 版本，可以在&lt;a href=&quot;https:&#x2F;&#x2F;share.weiyun.com&#x2F;XbZj79eC&quot;&gt;这里&lt;&#x2F;a&gt;下载。警告：这个压缩包大概有 600 MB！&lt;&#x2F;p&gt;
+&lt;p&gt;在 Windows 上原生构建理论上也是可行的，但环境较难弄，我并未尝试，不知是否有冒险家愿意尝试。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;fang-fa-2-tong-guo-qi-ta-qu-dao-an-zhuang&quot;&gt;方法 2 通过其他渠道安装&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#fang-fa-2-tong-guo-qi-ta-qu-dao-an-zhuang&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;通过 Anaconda 或 docker 可以安装。注意，**以下的方法我都没有试过，**并且获得的版本可能较老。&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;conda config --add channels conda-forge
+&lt;&#x2F;span&gt;&lt;span&gt;conda install cling
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;或&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;docker pull compilerresearch&#x2F;cling
+&lt;&#x2F;span&gt;&lt;span&gt;docker run -t -i compilerresearch&#x2F;cling
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;bei-jing-bu-chong-he-wei-lai-zhan-wang&quot;&gt;背景补充和未来展望&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#bei-jing-bu-chong-he-wei-lai-zhan-wang&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;cling 是 CERN 的 &lt;a href=&quot;https:&#x2F;&#x2F;root.cern&#x2F;&quot;&gt;ROOT 工程&lt;&#x2F;a&gt; 的一个核心一部分。没错 CERN 就是那个搞对撞机的【欧洲核子研究组织】，而 ROOT 则是一个面向高能物理学领域的 data scientist 的数据分析框架。早些年头 python 在科学数据分析领域还不如现在流行，C++ 语言在这方面有大量的应用。近 5 年来，cling 帮助分析了 1 EB 的物理数据，在 1000 多篇科学出版物的背后发挥着重要的作用。&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;ROOT 的开发者也许不以为他们搞出了个多么了不起的东西，但 cling 却获得了越来越多的在科研之外的社区成员的喜爱，特别是 LLVM、搞编译器的人们，他们一起帮助完善 cling，修 bug。&lt;&#x2F;p&gt;
+&lt;p&gt;尽管已有一些应用，cling 仍然处在版本号以 0. 开头的不稳定阶段。（甚至在若干版本以前，只要输入了会 CE 的代码就会崩溃……大概这种状态）cling 宣称能较快支持新语言标准，因为它大量复用 LLVM 和 clang 的代码。然而实际上稍差一点：今年 LLVM 发布 12 版本，cling 发布 0.9 版，而 cling 的基础 LLVM 是 2019 年的 9 版本。因为仅靠复用代码不能实现完全的解释器的功能，有的地方必须在 LLVM 之上打补丁。可想而知每一次 LLVM 新版发布时都维护一下这个“补丁”是很麻烦的。&lt;&#x2F;p&gt;
+&lt;p&gt;随着两方社区增进交流，cling 想将其自己实现的有必要的部分回馈给 LLVM，而 cling 又想要从 LLVM 的更新中获益，依赖版本的跟进不及时成了摆在他们面前的挑战。最近，cling 宣布向 LLVM 的 clang-repl 项目过渡。&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#2&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;今年五月，clang-repl 最少的基本功能完成，进入 LLVM 仓库。（这不意味着 cling 作为一个项目会停止。）cling 和 clang-repl 的未来如何，让我们拭目以待。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注：以上含有我的个人理解，可能不准确。请参考官网和下面的参考资料。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;can-kao-zi-liao&quot;&gt;参考资料&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#can-kao-zi-liao&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;blog.llvm.org&#x2F;posts&#x2F;2020-11-30-interactive-cpp-with-cling&#x2F;&quot;&gt;Interactive C++ with Cling, The LLVM Project Blog&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;2&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;2&lt;&#x2F;sup&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;root.cern&#x2F;blog&#x2F;cling-in-llvm&#x2F;&quot;&gt;Cling Transitions to LLVM&#x27;s Clang-Repl&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="zh_CN">
+        <title>普通音乐（2）：资料室的茶会</title>
+        <published>2021-06-07T21:58:49+00:00</published>
+        <updated>2021-06-07T21:58:49+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://zjl37.github.io/posts/2021/ordinary-music-2-tea-party-in-the-ref-room/" type="text/html"/>
+        <id>https://zjl37.github.io/posts/2021/ordinary-music-2-tea-party-in-the-ref-room/</id>
+        
+        <content type="html">&lt;p&gt;欢迎来到“普通音乐计划”的第二期！今天要介绍的是 CLANNAD 的配乐，資料室のお茶会。&lt;&#x2F;p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;请@&lt;a href=&quot;https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;user&#x2F;299944&quot;&gt;似镜流年&lt;&#x2F;a&gt;为我们介绍！&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;听到这段轻跃的旋律，仿佛我们又回到了那天下午的那个资料室。&lt;&#x2F;p&gt;
+&lt;p&gt;一个憨态可掬的&lt;a href=&quot;https:&#x2F;&#x2F;zh.moegirl.org.cn&#x2F;%E5%AE%AB%E6%B3%BD%E6%9C%89%E7%BA%AA%E5%AE%81&quot;&gt;宫泽有纪宁&lt;&#x2F;a&gt;优雅地给您端上咖啡，悠闲地谈天度过一个下午的时光。&lt;&#x2F;p&gt;
+&lt;p&gt;听这段乐曲可以让人感到十分悠闲，给人一种慵懒（&lt;del&gt;起床&lt;&#x2F;del&gt;）的感觉，十分适合用来舒缓身心，希望听者能够喜欢作者记谱的版本。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注：本曲是温州中学目前的午休起床铃。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;y.qq.com&#x2F;n&#x2F;ryqq&#x2F;songDetail&#x2F;0022RXzY2i0GvP&quot;&gt;听原曲&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;qu-pu&quot;&gt;曲谱&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#qu-pu&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;试听：&lt;&#x2F;p&gt;
+&lt;audio controls=&quot;controls&quot;&gt;
+  &lt;source src=&quot;https:&#x2F;&#x2F;link.jscdn.cn&#x2F;1drv&#x2F;aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbUV4Y0dVbmhEOS15blVYSWpSYlEzaXZtR2E4P2U9NjYwbGVq.mp3&quot; type=&quot;audio&#x2F;mp3&quot; &#x2F;&gt;
+你的浏览器不支持播放此音频。
+&lt;&#x2F;audio&gt;
+&lt;p&gt;下面展示曲谱的钢琴部分。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.loli.net&#x2F;2021&#x2F;06&#x2F;07&#x2F;tZbyl8EIqcNuDLo.png&quot; alt=&quot;資料室のお茶会-pno-1.png&quot; &#x2F;&gt;   &lt;img src=&quot;https:&#x2F;&#x2F;i.loli.net&#x2F;2021&#x2F;06&#x2F;07&#x2F;bOVKfCFMwtrZ469.png&quot; alt=&quot;資料室のお茶会-pno-2.png&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;我们的曲谱还包括低音部分，可以下载查看。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;wwe.lanzoui.com&#x2F;b01idevsb&quot;&gt;https:&#x2F;&#x2F;wwe.lanzoui.com&#x2F;b01idevsb&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+密码：&lt;code&gt;ce1r&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;guan-yu-musicxml&quot;&gt;关于 MusicXML&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#guan-yu-musicxml&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h4&gt;
+&lt;p&gt;MusicXML 是一种开放的乐谱格式，已经被众多的音乐软件支持，如 Finale，Musescore，Sibelius 等。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;can-kao-zi-liao&quot;&gt;参考资料&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#can-kao-zi-liao&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;https:&#x2F;&#x2F;sound.jp&#x2F;m_maru&#x2F;003Key&#x2F;05CLANNAD&#x2F;110shiryoushitsu.pdf&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;www.gangqinpu.com&#x2F;cchtml&#x2F;896123.htm&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="zh_CN">
+        <title>停止使用带有“_GB2312”后缀的字体！</title>
+        <published>2021-05-23T16:30:44+00:00</published>
+        <updated>2021-05-23T16:30:44+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://zjl37.github.io/posts/2021/say-no-to-fangsong-gb2312-and-kaiti-gb2312/" type="text/html"/>
+        <id>https://zjl37.github.io/posts/2021/say-no-to-fangsong-gb2312-and-kaiti-gb2312/</id>
+        
+        <content type="html">&lt;p&gt;“楷体_GB2312”和“仿宋_GB2312”是由长城电脑科技于 1994 年设计制作的 TrueType 字体，至今仍在广泛使用。它们的普及是因为在 Windows XP &#x2F; Windows Server 2003 及以前的 Windows 系统中附带了这两款字体，以及很大程度上各单位部门对公文排版格式的规定与要求。&lt;&#x2F;p&gt;
+&lt;p&gt;然而随着时间推移，这两款字体的问题也显露出来。&lt;&#x2F;p&gt;
+&lt;!--more--&gt;
+&lt;h2 id=&quot;shou-zi-tai-shao&quot;&gt;收字太少&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#shou-zi-tai-shao&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;这不是今天的重点，因此略提一二。&lt;&#x2F;p&gt;
+&lt;p&gt;因为这两款字体遵循 GB2312 标准，但也只限于 GB2312 标准，那么它的收字只有 6763 个。GB2312 中没有而 GB18030 或 Unicode 中有的情况，我就不再举例了。谁也不保证你不会碰到这些字。一般软件中当你用到不在字库中的字时就会 fallback 到另一种字体，往往会形式不统一造成不美观。&lt;&#x2F;p&gt;
+&lt;p&gt;GB2312 已转换为推荐性标准，并被更新标准取代。一般成熟的字体的收的字数往往会远超 GB2312 的范围，因此没必要执着于其后缀所赋予的意义。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;zi-xing-wen-ti&quot;&gt;字形问题&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#zi-xing-wen-ti&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;在某些情况下，你会看到&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.loli.net&#x2F;2021&#x2F;05&#x2F;22&#x2F;aIxX8dwutWel4sr.png&quot; alt=&quot;1360-cross-issue.png&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;▲ 问题 1：笔画交叉处出现“空心”&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.loli.net&#x2F;2021&#x2F;05&#x2F;22&#x2F;JP1cfrgMi3BGoHd.png&quot; alt=&quot;1360-bold-issue.png&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;▲ 问题 2：加粗的字体反而笔画“发虚”，放大仔细看可以发现各笔画粗细不均。&lt;&#x2F;p&gt;
+&lt;p&gt;这些问题深刻的根源在于其字形的问题。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.loli.net&#x2F;2021&#x2F;05&#x2F;22&#x2F;CjDdytu6ZgoBJlz.png&quot; alt=&quot;1360-glyph-cmp.png&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;▲ “奋”的字形，左：长城电脑的楷体（字体名称为：“楷体_GB2312”），右：中易楷体（字体名称为：“楷体”）&lt;&#x2F;p&gt;
+&lt;p&gt;以楷体的字形为例，用字体设计工具打开字体文件，发现：长城电脑设计的字形，对每个笔画绘制一个轮廓。中易设计的字形，呈现的是所有笔画合并后的轮廓。事实上，后者的做法是现在几乎所有字体采用的方法。&lt;&#x2F;p&gt;
+&lt;p&gt;看到这里，聪明的你也许已经猜到问题 1 是怎么回事了。下面尝试从技术上解释。如果你不想看，可以跳到下一个小标题。&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;我们知道，字形是矢量图形。矢量图用直线和曲线描绘图形的轮廓。用轮廓表示平面上的区域，本来是很简单的，然而因为有表示含有空心区域（如“口”“田”字的中间）的需要，而变得复杂了起来。&lt;&#x2F;p&gt;
+&lt;p&gt;给轮廓规定方向。一般地，如果用顺时针代表填充，那么就用逆时针代表挖去。这是最自然的做法，因为当你合并一些顺时针轮廓时，逆时针轮廓就有可能自然产生：&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.loli.net&#x2F;2021&#x2F;05&#x2F;22&#x2F;wjfyEYmzD98C5R1.png&quot; alt=&quot;1360-union-eg.png&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;基于上面直观的想法，我们来看绘制矢量图形的填充算法：&lt;&#x2F;p&gt;
+&lt;p&gt;填充一个矢量图形，其核心在于判断每个像素点是否在这个图形内部。对于一个点，我们不妨定义它的&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;总卷绕数（Winding number）＝它所处于的顺时针轮廓的数量－它所处于的逆时针轮廓的数量
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.loli.net&#x2F;2021&#x2F;05&#x2F;22&#x2F;RCia2Qo6dZEHYlf.png&quot; alt=&quot;1360-glyph-with-winding-num.png&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;总卷绕数与填充还是不填充的对应关系叫做 Winding Rule，不同的软件和字体标准有不同的规则。以下是两种主要的：&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;非零填充：只要卷绕数非 0 就填充&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;优点是字形上无需把笔画轮廓合并，显示时就可以拼接好。可以节省字体文件的大小。苹果和微软开发的 Truetype 标准就采用这种规则。&lt;&#x2F;p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;奇偶填充：当卷绕数是奇数时填充&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;优点是无需关心轮廓的方向。Postscript 就采用这种规则。&lt;&#x2F;p&gt;
+&lt;p&gt;于是我们知道：当采用“奇偶填充”规则的软件显示长城电脑的字形时就会出现问题 1。&lt;&#x2F;p&gt;
+&lt;p&gt;然而，我们所见的现实情况更为复杂：软件的实现不一定遵循标准；……甚至同一软件内部的不同功能也会采用不同的规则，比如问题一的截图就是在常用的办公软件里一种“艺术字”的显示效果，但在该软件正文排版中则不会有这样的问题。&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;对于没有为不同字重专门设计另一套字形的字体，系统在应用“粗体”效果时就生成所谓“伪粗体”（faux bold）。最常见的生成伪粗体的方法是给文字外圈添加一圈描边。&lt;&#x2F;p&gt;
+&lt;p&gt;现在，我们只要想一想在字形轮廓层面发生了什么，就能理解问题 2 的产生原因。然而，网上并没有找到详细描述生成伪粗体的算法的资料。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;下面是我未经证实的猜想：&lt;&#x2F;p&gt;
+&lt;p&gt;在字形设计规范的情况下，字形上所有轮廓不会相交，轮廓的定向使得任一点的总卷绕数只有两种取值。只需把顺时针的轮廓往外扩大，逆时针的轮廓往里缩小即可。从轮廓上任何一点看，不管是顺时针还是逆时针的轮廓，都会向其前进方向的左侧偏移。&lt;&#x2F;p&gt;
+&lt;p&gt;然而，在有“奇偶填充”这种规则的环境下，不是所有字体都会遵循这样的定向规则，于是软件需要手动根据“奇偶填充”判断某一圈轮廓需要向哪个方向偏移。若没有轮廓相交，则用除 A 以外的轮廓计算的 A 内各点的总卷绕数都是相同的。然而，在轮廓有相交的情况下这不成立。万一软件选择了一个交叉处的点，并认为该轮廓是一个内部轮廓，那么它所代表的笔画就会变细而不是加粗了。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;要弄清楚问题到底是怎么发生的，必须要看到文字渲染引擎的实现源代码或者有其他确凿证据，然而在文字渲染引擎都不是自由软件的情况下这几乎是不可能的。于是我转而探究什么样的环境会引起问题 2。&lt;&#x2F;p&gt;
+&lt;p&gt;在软件方面，发现 Windows 上各种办公软件（已知 Microsoft Office, WPS 及 LibreOffice）会产生问题 2，写字板不会。这立即使我敏锐地感受到了该问题与传统 Win32 桌面应用和 Modern 应用的差异有关。&lt;&#x2F;p&gt;
+&lt;p&gt;最终，我花了一些时间写了一个&lt;a href=&quot;https:&#x2F;&#x2F;1drv.ms&#x2F;u&#x2F;s!AmExcGUnhD9-yEShjzyh-QW9AOmk?e=cfG2Qj&quot;&gt;测试程序&lt;&#x2F;a&gt;，证明了在 Windows 上 GDI、GDI+ 不会有问题，DirectWrite 有问题。&lt;&#x2F;p&gt;
+&lt;p&gt;这不能说是 DirectWrite 的 bug，因为字形不按标准做，没有人保证显示效果正确，就像 C++ 的 UB 一样。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;can-kao-lian-jie&quot;&gt;参考链接&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#can-kao-lian-jie&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.zhihu.com&#x2F;question&#x2F;22958337&quot;&gt;打印「仿宋_GB2312」字体总在笔画交叉处出现空心，怎么解决？ - 知乎&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;docs.microsoft.com&#x2F;en-us&#x2F;typography&#x2F;opentype&#x2F;spec&#x2F;ttch01#the-scan-converter&quot;&gt;TrueType Fundamentals - Microsoft Docs&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="zh_CN">
+        <title>普通音乐（1）：籀园春风</title>
+        <published>2021-03-08T14:08:39+00:00</published>
+        <updated>2021-03-08T14:08:39+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://zjl37.github.io/posts/2021/ordinary-music-1-wzhs-song/" type="text/html"/>
+        <id>https://zjl37.github.io/posts/2021/ordinary-music-1-wzhs-song/</id>
+        
+        <content type="html">&lt;p&gt;欢迎来到“普通音乐计划”的第一期！今天要介绍的是温州中学校歌。&lt;&#x2F;p&gt;
+&lt;!--more--&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“普通音乐计划”是我的部分扒谱成果的公开展示，关于本计划的宗旨和目的是什么，其实我也没想好。以后可能会专门写一篇文章详细介绍。然而这不妨碍我们立刻开始。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;jie-shao&quot;&gt;介绍&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#jie-shao&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;说到校歌就不得不说说校史。温州中学的校史和追溯到 1902 年（清光绪二十八年）孙诒让先生创立的温州府学堂，后历经“浙江省立第十中学”、“浙江省立温州中学”等时期，1985年更名为“浙江省温州中学”。1923 到 1924 年朱自清先生在这里任教，写下了这首校歌。&lt;&#x2F;p&gt;
+&lt;p&gt;校歌对温州中学的影响可谓深远。校训“英奇匡国，作圣启蒙”就出自校歌。时至今日，在遇到大型活动时，校方仍会从中摘取意象，组成一些宣传语。&lt;&#x2F;p&gt;
+&lt;p&gt;令我惊讶的是，关于校歌的音频等资料竟然在网上难以找到。 &lt;del&gt;网易云音乐中有学生的翻唱版本都没有原版。&lt;&#x2F;del&gt; （&lt;a href=&quot;https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;song?id=1825687584&quot;&gt;现在有了&lt;&#x2F;a&gt;。）不过有这样的名家作的校歌还真是罕见而值得珍惜的呢！&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;qu-pu&quot;&gt;曲谱&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#qu-pu&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;在高一上学期开设的音乐课的第一节，我们就得到了校歌的简谱。学校里也有一面墙上用木板刻的五线谱。我用它们来校对我已扒的谱，并没有完全采用之。相比这两者，我扒的谱含有反复段落，而且在一些细节处跟随了我们经常在校园里听到的版本（也就是目前网易云音乐上的）。&lt;&#x2F;p&gt;
+&lt;p&gt;关于曲作者：
+这在一段时间或许是一个有争议或需要考证的问题。与百度百科所说的（李叔同）不同，我们从学校拿到的谱上写的是阮湘咸。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.loli.net&#x2F;2021&#x2F;03&#x2F;14&#x2F;GT9amYzHleIVUXM.png&quot; alt=&quot;温州中学校歌-1-1.png&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="zh_CN">
+        <title>在 C++ 中使用中文标识符</title>
+        <published>2021-02-10T15:22:13+00:00</published>
+        <updated>2021-02-10T15:22:13+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://zjl37.github.io/posts/2021/using-unicode-identifier-cpp/" type="text/html"/>
+        <id>https://zjl37.github.io/posts/2021/using-unicode-identifier-cpp/</id>
+        
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;2021 年 7 月更新：&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;g++ 从 10 版本开始支持 UTF-8 编码的 Unicode 标识符名称，参见&lt;a href=&quot;https:&#x2F;&#x2F;gcc.gnu.org&#x2F;bugzilla&#x2F;show_bug.cgi?id=67224&quot;&gt;这个 bug report&lt;&#x2F;a&gt;。&lt;&#x2F;p&gt;
+&lt;p&gt;对 &lt;code&gt;### 与 OIer 的关系&lt;&#x2F;code&gt; 的补充：（为保持我第一篇文章的原样，下文不再修改。）&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;noi.cn&#x2F;gynoi&#x2F;jsgz&#x2F;2021-07-16&#x2F;732450.shtml&quot;&gt;NOI Linux 2.0发布&lt;&#x2F;a&gt;，其 g++ 版本为 9.3.0，这也是 Ubuntu 20.04 apt 默认安装的版本。至写作时，洛谷的 g++ 版本尚为 8。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;注意：本文撰写于文章发布很久以前。仅用来测试显示效果，不一定代表我目前的观点或以后的行文风格。&lt;&#x2F;strong&gt; &lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;偶尔看到一份 python 代码里使用了中文变量名，便想，C++ 是否支持 Unicode 标识符呢？&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意本文关注的是 Unicode 标识符（用作变量名等的），而在字符串中放入 Unicode 字符已经是非常普遍的了。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;以一个 OIer 具备的能力和条件，可以用 Dev-C++ 写出一段如下代码（保存文件名为 &lt;code&gt;test67.cpp&lt;&#x2F;code&gt;）并尝试编译：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;cpp&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-cpp &quot;&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;bits&#x2F;stdc++.h&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;using namespace&lt;&#x2F;span&gt;&lt;span&gt; std;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;typedef int &lt;&#x2F;span&gt;&lt;span&gt;整数;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;typedef double &lt;&#x2F;span&gt;&lt;span&gt;双精度小数;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;整数 甲;
+&lt;&#x2F;span&gt;&lt;span&gt;双精度小数 乙;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    cin&amp;gt;&amp;gt;甲&amp;gt;&amp;gt;乙;
+&lt;&#x2F;span&gt;&lt;span&gt;    cout&amp;lt;&amp;lt;甲&amp;lt;&amp;lt;&amp;quot; &amp;quot;&amp;lt;&amp;lt;乙&amp;lt;&amp;lt;endl;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;结果可想而知。放弃。&lt;&#x2F;p&gt;
+&lt;p&gt;...But wait!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;upgrade&quot;&gt;UPGRADE!&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#upgrade&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;Dev-C++ 是几年前的老古董了？！它所自带的编译器是 TDM-GCC 4.9.2. 现在想要使用 Unicode 标识符，看起来是个很新的概念，很容易想到需要最新的开发环境。&lt;&#x2F;p&gt;
+&lt;p&gt;在网上的资料指引下，我决定&lt;a href=&quot;https:&#x2F;&#x2F;sourceforge.net&#x2F;projects&#x2F;mingw-w64&#x2F;&quot;&gt;到 sourceforge 下载 
+MinGW-w64 的 C++ 编译器&lt;&#x2F;a&gt;。我选择的版本是 &lt;code&gt;x86_64-win32-sjlj&lt;&#x2F;code&gt;. 经过了很多麻烦的步骤，终于搭建好了。&lt;&#x2F;p&gt;
+&lt;p&gt;那么接下来就：&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;g++ test67.cpp
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;结果又是一大堆 &lt;code&gt;error: stray &#x27;\...&#x27; in program&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;这时源代码文件的字符编码应该还是 GBK，尝试转换为 UTF-8，未果。&lt;&#x2F;p&gt;
+&lt;p&gt;上网搜索资料。&lt;strong&gt;总结&lt;&#x2F;strong&gt;出以下内容：（因为查不到 C++ 标准，只能从各种问答帖中总结）&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“标识符只能由字母、数字和下划线组成并不能以下划线开头”已经是很早以前的事了。至少从 C++98 开始，标识符中还允许包含“Universal character name”，我们叫做“通用字符名”。&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;“通用字符名”包含一些 Unicode 字符码位。从 C++11 开始，这些码位中包括了汉字所在码位。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;于是：&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;g++ test67.cpp -std=c++11
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;未果。又闻：&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Since GCC 5, the option &lt;code&gt;-fextended-identifiers&lt;&#x2F;code&gt; is enabled by default for C++, and for C99 and later C versions. This only supports UCNs in identifiers, not extended characters represented other than with UCNs.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;（来自 &lt;a href=&quot;https:&#x2F;&#x2F;gcc.gnu.org&#x2F;wiki&#x2F;FAQ#What_is_the_status_of_adding_the_UTF-8_support_for_identifier_names_in_GCC.3F&quot;&gt;GCC Wiki&lt;&#x2F;a&gt;）&lt;&#x2F;p&gt;
+&lt;p&gt;也就是说 &lt;strong&gt;GCC（g++）目前只支持&lt;&#x2F;strong&gt; &#x2F; &lt;strong&gt;你需要写个程序将源代码转换为&lt;&#x2F;strong&gt; 像这样的代码：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;cpp&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-cpp &quot;&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;bits&#x2F;stdc++.h&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;using namespace&lt;&#x2F;span&gt;&lt;span&gt; std;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;typedef int&lt;&#x2F;span&gt;&lt;span&gt; \u6574\u6570;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;typedef double&lt;&#x2F;span&gt;&lt;span&gt; \u53cc\u7cbe\u5ea6\u5c0f\u6570;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;\u6574\u6570 \u7532;
+&lt;&#x2F;span&gt;&lt;span&gt;\u53cc\u7cbe\u5ea6\u5c0f\u6570 \u4e59;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    cin&amp;gt;&amp;gt;\u7532&amp;gt;&amp;gt;\u4e59;
+&lt;&#x2F;span&gt;&lt;span&gt;    cout&amp;lt;&amp;lt;\u7532&amp;lt;&amp;lt;&amp;quot; &amp;quot;&amp;lt;&amp;lt;\u4e59&amp;lt;&amp;lt;endl;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Damn! 这显然不是我们想要的。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;compiler-matters&quot;&gt;Compiler matters&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#compiler-matters&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;既然 GCC 不支持，那我们就换其他编译器！就&lt;a href=&quot;https:&#x2F;&#x2F;releases.llvm.org&#x2F;download.html&quot;&gt;换 clang&lt;&#x2F;a&gt; 好了。然而在搭建过程中又碰到了比之前更大的麻烦。在此略提一下：&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Clang 一开始会连许多标准库头文件都找不到。它的 build 出来的默认 target 好像是针对 msvc 的。所以在每个编译命令行中加入 &lt;code&gt;--target=x86_64-w64-mingw&lt;&#x2F;code&gt;。（该选项的值根据之前用到的编译器版本设置）&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Clang 的 &lt;code&gt;float.h&lt;&#x2F;code&gt; 库和 MinGW64 的不兼容，需要&lt;a href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;57166340&quot;&gt;特殊处理&lt;&#x2F;a&gt;。&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;当一切准备完成后：&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;clang++ -target x86_64-w64-mingw test67.cpp
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;编译成功！&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;zong-jie&quot;&gt;总结&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#zong-jie&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;标准早就已经定了，但实现不实现却还和编译器有关。编译器支持了 Unicode 标识符它还要考虑字符编码的问题。经测试，clang 支持带或不带 BOM 的 UTF-8 编码，不支持 UTF-16 或其他 ANSI 编码。毕竟，“通用字符名”是用 Unicode 码位定义的，编译器应支持一些对 Unicode 的编码，而像将 GBK 编码的源代码转为 UTF-8，应该不是编译器擅长做的事吧。&lt;&#x2F;p&gt;
+&lt;p&gt;受限于条件，我未能测试更多的编译器，如 MSVC 等。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;yu-oier-de-guan-xi&quot;&gt;与 OIer 的关系&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#yu-oier-de-guan-xi&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;del&gt;没有关系。&lt;&#x2F;del&gt; 目前，洛谷评测用的是 GCC，而 Codeforces 上已经可以选择用 Clang。（由于我所知有限，不能再举例）目前，国内的官方赛事对 C++11 的标准的支持的进展都非常缓慢，所以还是不要想太多。&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
